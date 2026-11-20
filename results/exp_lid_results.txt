@@ -1,0 +1,12 @@
+
+##### Deep96-1M: LID (MLE over the 50 nearest neighbours): median 23.0, 10th to 90th percentile 13.7 to 33.7
+Method  Spearman rho  LID quartile 1  LID quartile 2  LID quartile 3  LID quartile 4  
+HNSW    -0.695        0.9953          0.9752          0.9449          0.8669          
+SuCo    -0.468        0.9958          0.9904          0.9739          0.9377          
+(quartile 1 = lowest LID = easiest queries; recall@50, mean per quartile)
+
+##### Gist-250K: LID (MLE over the 50 nearest neighbours): median 46.1, 10th to 90th percentile 27.2 to 64.2
+Method  Spearman rho  LID quartile 1  LID quartile 2  LID quartile 3  LID quartile 4  
+HNSW    -0.612        0.9798          0.9473          0.9076          0.8750          
+SuCo    -0.543        0.9112          0.8369          0.7887          0.7421          
+(quartile 1 = lowest LID = easiest queries; recall@50, mean per quartile)

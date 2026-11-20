@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+corpus 81039 queries 500
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1090.58it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 1328.99it/s]
+First stage   Recall@100  nDCG@10 geo  nDCG@10 +CE  MRR@10 +CE
+Brute force   0.9933      0.6067       0.7028       0.6299
+HNSW ef=200   0.9903      0.6045       0.7016       0.6292
+TaCo          0.9623      0.6001       0.6925       0.6219
+ASC Imp1+2    0.9283      0.5799       0.6697       0.6025

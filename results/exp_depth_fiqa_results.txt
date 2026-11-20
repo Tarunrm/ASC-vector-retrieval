@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+passages 57638 queries 500
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1032.01it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 1127.97it/s]
+(check: the FiQA run of the thesis had Recall@100 0.7134 and nDCG@10 before 0.3788 for exact search)
+First stage   Depth  Recall@D  nDCG@10 before  nDCG@10 after  MRR@10 after  Hit@1   Hit@5   CE ms/query
+Exact search  10     0.4491    0.3788          0.3922         0.4808        0.390   0.594   12.7
+Exact search  20     0.5244    0.3788          0.4004         0.4868        0.394   0.610   24.7
+Exact search  30     0.5730    0.3788          0.4012         0.4843        0.394   0.608   37.5
+Exact search  50     0.6317    0.3788          0.3997         0.4789        0.384   0.612   63.0
+Exact search  100    0.7134    0.3788          0.3904         0.4664        0.370   0.600   116.8
+HNSW ef=200   10     0.4471    0.3782          0.3912         0.4802        0.390   0.592   12.5
+HNSW ef=200   20     0.5224    0.3782          0.3995         0.4862        0.394   0.608   25.1
+HNSW ef=200   30     0.5710    0.3782          0.4003         0.4836        0.394   0.606   36.5
+HNSW ef=200   50     0.6297    0.3782          0.3989         0.4782        0.384   0.610   61.6
+HNSW ef=200   100    0.7141    0.3782          0.3895         0.4667        0.372   0.598   118.4

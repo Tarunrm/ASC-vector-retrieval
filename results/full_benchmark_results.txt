@@ -1,0 +1,149 @@
+Loading queries...
+
+=================================================================
+  DATASET SIZE: 100,000 vectors
+=================================================================
+  [1/9] Brute Force...
+    Recall=1.0000, Time=0.111ms
+  [2/9] HNSW...
+    Recall=0.9765, Time=0.009ms
+  [3/9] IVF-PQ...
+    Recall=0.4773, Time=0.050ms
+  [4/9] Annoy...
+    Recall=0.5553, Time=0.034ms
+  [5/9] LSH...
+    Recall=0.6418, Time=0.021ms
+  [6/9] SC-Linear...
+    Recall=0.9460, Time=13.8ms
+  [7/9] TaCo Baseline...
+    Recall=0.0000, Time=0.108ms
+  [8/9] ASC Improvement 1...
+    Recall=0.0000, Time=0.123ms
+  [9/9] ASC Improvement 1+2...
+    Recall=0.0000, Time=0.114ms
+
+=================================================================
+  DATASET SIZE: 500,000 vectors
+=================================================================
+  [1/9] Brute Force...
+    Recall=1.0000, Time=0.749ms
+  [2/9] HNSW...
+    Recall=0.9524, Time=0.021ms
+  [3/9] IVF-PQ...
+    Recall=0.3930, Time=0.027ms
+  [4/9] Annoy...
+    Recall=0.4410, Time=0.050ms
+  [5/9] LSH...
+    Recall=0.5796, Time=0.089ms
+  [6/9] SC-Linear...
+    Recall=0.9812, Time=88.9ms
+  [7/9] TaCo Baseline...
+    Recall=0.9039, Time=0.371ms
+  [8/9] ASC Improvement 1...
+    Recall=0.9039, Time=0.368ms
+  [9/9] ASC Improvement 1+2...
+    Recall=0.8764, Time=0.328ms
+
+=================================================================
+  DATASET SIZE: 1,000,000 vectors
+=================================================================
+  [1/9] Brute Force...
+    Recall=1.0000, Time=2.124ms
+  [2/9] HNSW...
+    Recall=0.9419, Time=0.026ms
+  [3/9] IVF-PQ...
+    Recall=0.3541, Time=0.052ms
+  [4/9] Annoy...
+    Recall=0.4158, Time=0.051ms
+  [5/9] LSH...
+    Recall=0.5515, Time=0.178ms
+  [6/9] SC-Linear...
+    Recall=0.9853, Time=182.0ms
+  [7/9] TaCo Baseline...
+    Recall=0.9213, Time=0.702ms
+  [8/9] ASC Improvement 1...
+    Recall=0.9213, Time=0.707ms
+  [9/9] ASC Improvement 1+2...
+    Recall=0.8991, Time=0.816ms
+
+=================================================================
+  DATASET SIZE: 2,000,000 vectors
+=================================================================
+  [1/9] Brute Force...
+    Recall=1.0000, Time=4.923ms
+  [2/9] HNSW...
+    Recall=0.9267, Time=0.032ms
+  [3/9] IVF-PQ...
+    Recall=0.3273, Time=0.102ms
+  [4/9] Annoy...
+    Recall=0.3823, Time=0.055ms
+  [5/9] LSH...
+    Recall=0.5314, Time=0.614ms
+  [6/9] SC-Linear...
+    Skipped (too slow for 2,000,000)
+  [7/9] TaCo Baseline...
+    Recall=0.9443, Time=1.503ms
+  [8/9] ASC Improvement 1...
+    Recall=0.9443, Time=1.54ms
+  [9/9] ASC Improvement 1+2...
+    Recall=0.9298, Time=1.187ms
+
+
+=====================================================================================
+           FULL BENCHMARK RESULTS — ALL METHODS × ALL DATASET SIZES
+=====================================================================================
+
+--- 100,000 vectors ---
+Method             Family           Recall@50    Query(ms)
+-------------------------------------------------------
+Brute Force        Exact            1.0000       0.111
+HNSW               Graph            0.9765       0.009
+IVF-PQ             Quantization     0.4773       0.050
+Annoy              Tree             0.5553       0.034
+LSH                Hash             0.6418       0.021
+SC-Linear          Subspace Col.    0.9460       13.786
+TaCo               Subspace Col.    0.0000       0.108
+ASC Imp1           ASC              0.0000       0.123
+ASC Imp1+2         ASC              0.0000       0.114
+
+--- 500,000 vectors ---
+Method             Family           Recall@50    Query(ms)
+-------------------------------------------------------
+Brute Force        Exact            1.0000       0.749
+HNSW               Graph            0.9524       0.021
+IVF-PQ             Quantization     0.3930       0.027
+Annoy              Tree             0.4410       0.050
+LSH                Hash             0.5796       0.089
+SC-Linear          Subspace Col.    0.9812       88.881
+TaCo               Subspace Col.    0.9039       0.371
+ASC Imp1           ASC              0.9039       0.368
+ASC Imp1+2         ASC              0.8764       0.328
+
+--- 1,000,000 vectors ---
+Method             Family           Recall@50    Query(ms)
+-------------------------------------------------------
+Brute Force        Exact            1.0000       2.124
+HNSW               Graph            0.9419       0.026
+IVF-PQ             Quantization     0.3541       0.052
+Annoy              Tree             0.4158       0.051
+LSH                Hash             0.5515       0.178
+SC-Linear          Subspace Col.    0.9853       182.012
+TaCo               Subspace Col.    0.9213       0.702
+ASC Imp1           ASC              0.9213       0.707
+ASC Imp1+2         ASC              0.8991       0.816
+
+--- 2,000,000 vectors ---
+Method             Family           Recall@50    Query(ms)
+-------------------------------------------------------
+Brute Force        Exact            1.0000       4.923
+HNSW               Graph            0.9267       0.032
+IVF-PQ             Quantization     0.3273       0.102
+Annoy              Tree             0.3823       0.055
+LSH                Hash             0.5314       0.614
+SC-Linear          Subspace Col.    N/A          N/A
+TaCo               Subspace Col.    0.9443       1.503
+ASC Imp1           ASC              0.9443       1.540
+ASC Imp1+2         ASC              0.9298       1.187
+
+
+Benchmark complete!

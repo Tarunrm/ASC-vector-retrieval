@@ -1,0 +1,26 @@
+beta=0.05, nominal cap 12500 candidates; one thread, Gist-250K
+alpha variant               recall   avg cand  ms      
+0.02  baseline (free)       0.7372   28655     6.35    
+0.02  Imp1 (free)           0.7837   28972     6.43    
+0.02  baseline (capped)     0.5089   12500     3.41    
+0.02  Imp1 (capped)         0.5191   12500     3.31    
+      Imp1 - baseline, free  : +4.65 [+4.20, +5.11] points
+      Imp1 - baseline, capped: +1.02 [+0.46, +1.61] points
+0.04  baseline (free)       0.9058   53666     11.21   
+0.04  Imp1 (free)           0.9313   54862     11.53   
+0.04  baseline (capped)     0.6638   12500     4.02    
+0.04  Imp1 (capped)         0.6499   12500     3.98    
+      Imp1 - baseline, free  : +2.55 [+2.27, +2.84] points
+      Imp1 - baseline, capped: -1.38 [-2.11, -0.65] points
+0.06  baseline (free)       0.8993   44633     9.31    
+0.06  Imp1 (free)           0.9602   69394     13.88   
+0.06  baseline (capped)     0.7845   12500     3.79    
+0.06  Imp1 (capped)         0.7690   12500     4.10    
+      Imp1 - baseline, free  : +6.09 [+5.49, +6.70] points
+      Imp1 - baseline, capped: -1.55 [-2.31, -0.86] points
+0.08  baseline (free)       0.8874   20899     4.75    
+0.08  Imp1 (free)           0.8811   24150     5.30    
+0.08  baseline (capped)     0.7692   12500     3.43    
+0.08  Imp1 (capped)         0.7443   12500     3.52    
+      Imp1 - baseline, free  : -0.63 [-1.05, -0.21] points
+      Imp1 - baseline, capped: -2.49 [-3.19, -1.83] points

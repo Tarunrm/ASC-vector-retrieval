@@ -1,0 +1,10 @@
+--- alpha=0.08 beta=0.05 (total budget 120000 < N, clamp cannot bind) ---
+TaCo baseline                recall 0.88742  4.694 ms
+Imp1 only                    recall 0.88114  5.189 ms
+Imp2 only                    recall 0.82938  2.416 ms
+Imp1+2                       recall 0.82428  2.74 ms
+--- alpha=0.04 beta=0.05 (total budget 60000 < N, clamp cannot bind) ---
+TaCo baseline                recall 0.9058  10.994 ms
+Imp1 only                    recall 0.93128  11.154 ms
+Imp2 only                    recall 0.84506  3.835 ms
+Imp1+2                       recall 0.8691  4.548 ms

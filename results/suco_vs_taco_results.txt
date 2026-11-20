@@ -1,0 +1,48 @@
+
+=== deep96_1m (1000000 x 96), one thread ===
+build  system index stage s  wall s   peak GB
+       SuCo   8.2            10.5     2.00
+       TaCo   7.1            19.0     3.39
+query  system alpha  beta   recall@50  ms/query (median of 3)
+       SuCo   0.04   0.005  0.9492     0.993
+       TaCo   0.04   0.005  0.9331     2.697
+       SuCo   0.04   0.01   0.9745     1.506
+       TaCo   0.04   0.01   0.9372     2.844
+       SuCo   0.08   0.01   0.9775     1.493
+       TaCo   0.08   0.01   0.9576     2.703
+
+=== deep96_2m (2000000 x 96), one thread ===
+build  system index stage s  wall s   peak GB
+       SuCo   16.3           21.0     3.99
+       TaCo   14.1           38.3     6.77
+query  system alpha  beta   recall@50  ms/query (median of 3)
+       SuCo   0.04   0.005  0.9629     2.114
+       TaCo   0.04   0.005  0.9492     5.836
+       SuCo   0.04   0.01   0.9820     3.251
+       TaCo   0.04   0.01   0.9521     5.977
+       SuCo   0.08   0.01   0.9834     3.319
+       TaCo   0.08   0.01   0.9722     5.891
+
+=== sift_1m (1000000 x 128), one thread ===
+build  system index stage s  wall s   peak GB
+       SuCo   10.9           13.8     2.65
+       TaCo   6.9            28.2     4.51
+query  system alpha  beta   recall@50  ms/query (median of 3)
+       SuCo   0.04   0.005  0.9617     1.220
+       TaCo   0.04   0.005  0.9499     2.994
+       SuCo   0.04   0.01   0.9750     1.525
+       TaCo   0.04   0.01   0.9517     3.189
+       SuCo   0.08   0.01   0.9889     1.915
+       TaCo   0.08   0.01   0.9700     2.868
+
+=== gist_250k (250000 x 960), one thread ===
+build  system index stage s  wall s   peak GB
+       SuCo   8.3            13.9     4.73
+       TaCo   1.7            234.2    8.45
+query  system alpha  beta   recall@50  ms/query (median of 3)
+       SuCo   0.04   0.005  0.6809     0.928
+       TaCo   0.04   0.005  0.6185     2.120
+       SuCo   0.04   0.01   0.7811     1.538
+       TaCo   0.04   0.01   0.6248     2.164
+       SuCo   0.08   0.01   0.8197     1.541
+       TaCo   0.08   0.01   0.7251     2.371

@@ -1,0 +1,114 @@
+##### HNSW: effect of M and efConstruction (build on 8 threads, queries on one thread) #####
+Deep96-1M  M=8   efC=100  build     15s  ef=50   recall 0.7556  0.050 ms
+Deep96-1M  M=8   efC=100  build     15s  ef=100  recall 0.8612  0.084 ms
+Deep96-1M  M=8   efC=100  build     15s  ef=200  recall 0.9280  0.144 ms
+Deep96-1M  M=8   efC=100  build     15s  ef=400  recall 0.9658  0.301 ms
+Deep96-1M  M=8   efC=100  build     15s  ef=800  recall 0.9844  0.515 ms
+Deep96-1M  M=16  efC=100  build     23s  ef=50   recall 0.8616  0.065 ms
+Deep96-1M  M=16  efC=100  build     23s  ef=100  recall 0.9376  0.116 ms
+Deep96-1M  M=16  efC=100  build     23s  ef=200  recall 0.9739  0.228 ms
+Deep96-1M  M=16  efC=100  build     23s  ef=400  recall 0.9901  0.402 ms
+Deep96-1M  M=16  efC=100  build     23s  ef=800  recall 0.9966  0.706 ms
+Deep96-1M  M=16  efC=200  build     43s  ef=50   recall 0.8713  0.070 ms
+Deep96-1M  M=16  efC=200  build     43s  ef=100  recall 0.9457  0.117 ms
+Deep96-1M  M=16  efC=200  build     43s  ef=200  recall 0.9799  0.210 ms
+Deep96-1M  M=16  efC=200  build     43s  ef=400  recall 0.9936  0.407 ms
+Deep96-1M  M=16  efC=200  build     43s  ef=800  recall 0.9981  0.721 ms
+Deep96-1M  M=16  efC=400  build     77s  ef=50   recall 0.8745  0.071 ms
+Deep96-1M  M=16  efC=400  build     77s  ef=100  recall 0.9480  0.120 ms
+Deep96-1M  M=16  efC=400  build     77s  ef=200  recall 0.9817  0.232 ms
+Deep96-1M  M=16  efC=400  build     77s  ef=400  recall 0.9947  0.422 ms
+Deep96-1M  M=16  efC=400  build     77s  ef=800  recall 0.9986  0.734 ms
+Deep96-1M  M=32  efC=200  build     56s  ef=50   recall 0.9224  0.099 ms
+Deep96-1M  M=32  efC=200  build     56s  ef=100  recall 0.9722  0.161 ms
+Deep96-1M  M=32  efC=200  build     56s  ef=200  recall 0.9910  0.289 ms
+Deep96-1M  M=32  efC=200  build     56s  ef=400  recall 0.9974  0.524 ms
+Deep96-1M  M=32  efC=200  build     56s  ef=800  recall 0.9994  0.936 ms
+Deep96-1M  M=32  efC=400  build    109s  ef=50   recall 0.9300  0.097 ms
+Deep96-1M  M=32  efC=400  build    109s  ef=100  recall 0.9775  0.172 ms
+Deep96-1M  M=32  efC=400  build    109s  ef=200  recall 0.9938  0.310 ms
+Deep96-1M  M=32  efC=400  build    109s  ef=400  recall 0.9986  0.550 ms
+Deep96-1M  M=32  efC=400  build    109s  ef=800  recall 0.9997  0.952 ms
+Deep96-1M  M=48  efC=200  build     65s  ef=50   recall 0.9298  0.099 ms
+Deep96-1M  M=48  efC=200  build     65s  ef=100  recall 0.9761  0.171 ms
+Deep96-1M  M=48  efC=200  build     65s  ef=200  recall 0.9922  0.321 ms
+Deep96-1M  M=48  efC=200  build     65s  ef=400  recall 0.9979  0.568 ms
+Deep96-1M  M=48  efC=200  build     65s  ef=800  recall 0.9994  0.969 ms
+Gist-250K  M=16  efC=200  build     41s  ef=50   recall 0.7181  0.235 ms
+Gist-250K  M=16  efC=200  build     41s  ef=100  recall 0.8436  0.412 ms
+Gist-250K  M=16  efC=200  build     41s  ef=200  recall 0.9278  0.700 ms
+Gist-250K  M=16  efC=200  build     41s  ef=400  recall 0.9696  1.220 ms
+Gist-250K  M=16  efC=200  build     41s  ef=800  recall 0.9876  2.246 ms
+Gist-250K  M=32  efC=200  build     51s  ef=50   recall 0.7891  0.307 ms
+Gist-250K  M=32  efC=200  build     51s  ef=100  recall 0.8964  0.525 ms
+Gist-250K  M=32  efC=200  build     51s  ef=200  recall 0.9580  0.916 ms
+Gist-250K  M=32  efC=200  build     51s  ef=400  recall 0.9847  1.747 ms
+Gist-250K  M=32  efC=200  build     51s  ef=800  recall 0.9946  3.049 ms
+Gist-250K  M=48  efC=200  build     57s  ef=50   recall 0.8106  0.369 ms
+Gist-250K  M=48  efC=200  build     57s  ef=100  recall 0.9102  0.629 ms
+Gist-250K  M=48  efC=200  build     57s  ef=200  recall 0.9645  1.054 ms
+Gist-250K  M=48  efC=200  build     57s  ef=400  recall 0.9877  1.818 ms
+Gist-250K  M=48  efC=200  build     57s  ef=800  recall 0.9957  3.035 ms
+Gist-250K  M=32  efC=400  build    104s  ef=50   recall 0.8187  0.370 ms
+Gist-250K  M=32  efC=400  build    104s  ef=100  recall 0.9207  0.647 ms
+Gist-250K  M=32  efC=400  build    104s  ef=200  recall 0.9721  1.232 ms
+Gist-250K  M=32  efC=400  build    104s  ef=400  recall 0.9911  1.856 ms
+Gist-250K  M=32  efC=400  build    104s  ef=800  recall 0.9970  3.125 ms
+
+##### SuCo: effect of the number of subspaces and K (one thread) #####
+Deep96-1M  subspaces=4   K=50   alpha=0.02  beta=0.01  recall 0.9532  2.127 ms
+Deep96-1M  subspaces=4   K=50   alpha=0.04  beta=0.01  recall 0.9355  1.239 ms
+Deep96-1M  subspaces=4   K=50   alpha=0.08  beta=0.01  recall 0.9668  1.573 ms
+Deep96-1M  subspaces=4   K=50   alpha=0.08  beta=0.05  recall 0.9958  4.82 ms
+Deep96-1M  subspaces=6   K=50   alpha=0.02  beta=0.01  recall 0.9532  1.653 ms
+Deep96-1M  subspaces=6   K=50   alpha=0.04  beta=0.01  recall 0.9745  1.562 ms
+Deep96-1M  subspaces=6   K=50   alpha=0.08  beta=0.01  recall 0.9775  1.532 ms
+Deep96-1M  subspaces=6   K=50   alpha=0.08  beta=0.05  recall 0.9975  6.369 ms
+Deep96-1M  subspaces=8   K=50   alpha=0.02  beta=0.01  recall 0.9452  1.966 ms
+Deep96-1M  subspaces=8   K=50   alpha=0.04  beta=0.01  recall 0.9851  2.607 ms
+Deep96-1M  subspaces=8   K=50   alpha=0.08  beta=0.01  recall 0.9910  2.898 ms
+Deep96-1M  subspaces=8   K=50   alpha=0.08  beta=0.05  recall 0.9994  7.483 ms
+Deep96-1M  subspaces=12  K=50   alpha=0.02  beta=0.01  recall 0.9682  2.681 ms
+Deep96-1M  subspaces=12  K=50   alpha=0.04  beta=0.01  recall 0.9836  2.471 ms
+Deep96-1M  subspaces=12  K=50   alpha=0.08  beta=0.01  recall 0.9940  3.266 ms
+Deep96-1M  subspaces=12  K=50   alpha=0.08  beta=0.05  recall 0.9993  7.012 ms
+Deep96-1M  subspaces=16  K=50   alpha=0.02  beta=0.01  recall 0.9733  3.543 ms
+Deep96-1M  subspaces=16  K=50   alpha=0.04  beta=0.01  recall 0.9884  3.156 ms
+Deep96-1M  subspaces=16  K=50   alpha=0.08  beta=0.01  recall 0.9952  3.718 ms
+Deep96-1M  subspaces=16  K=50   alpha=0.08  beta=0.05  recall 0.9999  7.881 ms
+Deep96-1M  subspaces=6   K=100  alpha=0.02  beta=0.01  recall 0.9736  2.495 ms
+Deep96-1M  subspaces=6   K=100  alpha=0.04  beta=0.01  recall 0.9868  2.792 ms
+Deep96-1M  subspaces=6   K=100  alpha=0.08  beta=0.01  recall 0.9888  2.454 ms
+Deep96-1M  subspaces=6   K=100  alpha=0.08  beta=0.05  recall 0.9992  7.775 ms
+SIFT-1M    subspaces=4   K=50   alpha=0.02  beta=0.01  recall 0.9639  3.438 ms
+SIFT-1M    subspaces=4   K=50   alpha=0.04  beta=0.01  recall 0.9657  2.003 ms
+SIFT-1M    subspaces=4   K=50   alpha=0.08  beta=0.01  recall 0.9629  2.052 ms
+SIFT-1M    subspaces=4   K=50   alpha=0.08  beta=0.05  recall 0.9968  5.259 ms
+SIFT-1M    subspaces=8   K=50   alpha=0.02  beta=0.01  recall 0.9538  2.397 ms
+SIFT-1M    subspaces=8   K=50   alpha=0.04  beta=0.01  recall 0.9750  2.103 ms
+SIFT-1M    subspaces=8   K=50   alpha=0.08  beta=0.01  recall 0.9889  2.515 ms
+SIFT-1M    subspaces=8   K=50   alpha=0.08  beta=0.05  recall 0.9990  6.339 ms
+SIFT-1M    subspaces=16  K=50   alpha=0.02  beta=0.01  recall 0.8825  2.478 ms
+SIFT-1M    subspaces=16  K=50   alpha=0.04  beta=0.01  recall 0.9578  2.847 ms
+SIFT-1M    subspaces=16  K=50   alpha=0.08  beta=0.01  recall 0.9875  3.712 ms
+SIFT-1M    subspaces=16  K=50   alpha=0.08  beta=0.05  recall 0.9993  8.076 ms
+SIFT-1M    subspaces=8   K=100  alpha=0.02  beta=0.01  recall 0.9715  2.632 ms
+SIFT-1M    subspaces=8   K=100  alpha=0.04  beta=0.01  recall 0.9870  2.636 ms
+SIFT-1M    subspaces=8   K=100  alpha=0.08  beta=0.01  recall 0.9943  3.693 ms
+SIFT-1M    subspaces=8   K=100  alpha=0.08  beta=0.05  recall 0.9994  7.678 ms
+Gist-250K  subspaces=4   K=50   alpha=0.02  beta=0.01  recall 0.6780  3.561 ms
+Gist-250K  subspaces=4   K=50   alpha=0.04  beta=0.01  recall 0.7129  2.68 ms
+Gist-250K  subspaces=4   K=50   alpha=0.08  beta=0.01  recall 0.7267  2.622 ms
+Gist-250K  subspaces=4   K=50   alpha=0.08  beta=0.05  recall 0.9145  6.661 ms
+Gist-250K  subspaces=8   K=50   alpha=0.02  beta=0.01  recall 0.7526  2.578 ms
+Gist-250K  subspaces=8   K=50   alpha=0.04  beta=0.01  recall 0.7811  1.538 ms
+Gist-250K  subspaces=8   K=50   alpha=0.08  beta=0.01  recall 0.8197  1.558 ms
+Gist-250K  subspaces=8   K=50   alpha=0.08  beta=0.05  recall 0.9613  4.715 ms
+Gist-250K  subspaces=16  K=50   alpha=0.02  beta=0.01  recall 0.7577  2.298 ms
+Gist-250K  subspaces=16  K=50   alpha=0.04  beta=0.01  recall 0.8344  2.393 ms
+Gist-250K  subspaces=16  K=50   alpha=0.08  beta=0.01  recall 0.8853  2.789 ms
+Gist-250K  subspaces=16  K=50   alpha=0.08  beta=0.05  recall 0.9844  7.441 ms
+Gist-250K  subspaces=8   K=100  alpha=0.02  beta=0.01  recall 0.8204  2.659 ms
+Gist-250K  subspaces=8   K=100  alpha=0.04  beta=0.01  recall 0.8442  2.825 ms
+Gist-250K  subspaces=8   K=100  alpha=0.08  beta=0.01  recall 0.8715  3.011 ms
+Gist-250K  subspaces=8   K=100  alpha=0.08  beta=0.05  recall 0.9797  7.969 ms

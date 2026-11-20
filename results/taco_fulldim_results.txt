@@ -1,0 +1,2 @@
+deep96_1m: TaCo 6x16 (no truncation)  recall 0.90954  3.473 ms
+sift_1m: TaCo 8x16 (no truncation)  recall 0.87046  3.924 ms

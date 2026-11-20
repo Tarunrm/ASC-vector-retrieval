@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 1716.90it/s]
+Loading weights:   0%|          | 0/160 [00:00<?, ?it/s]Loading weights: 100%|██████████| 160/160 [00:00<00:00, 1603.09it/s]
+[transformers] [1mGPTNeoForCausalLM LOAD REPORT[0m from: EleutherAI/gpt-neo-125m
+Key                                                   | Status     |  | 
+------------------------------------------------------+------------+--+-
+transformer.h.{0...11}.attn.attention.masked_bias     | UNEXPECTED |  | 
+transformer.h.{0, 2, 4, 6, 8, 10}.attn.attention.bias | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+coherence 10/100  8.6 s per query
+coherence 20/100  8.7 s per query
+coherence 30/100  8.6 s per query
+coherence 40/100  8.6 s per query
+coherence 50/100  8.5 s per query
+coherence 60/100  8.5 s per query
+coherence 70/100  8.5 s per query
+coherence 80/100  8.4 s per query
+coherence 90/100  8.4 s per query
+coherence 100/100  8.4 s per query
+
+100 MS MARCO queries, SuCo top-100 candidates
+Ranking                                   nDCG@10  MRR@10  Hit@1  Hit@5  vs cosine, pts [95% CI]       vs cross-encoder, pts [95% CI]
+Cosine (geometric order)                  0.6319   0.5358  0.360  0.830  +0.00 [+0.00, +0.00]          -8.61 [-13.87, -3.77]
+SC-score only                             0.6323   0.5363  0.360  0.830  +0.04 [+0.00, +0.13]          -8.57 [-13.96, -3.43]
+Coherence only                            0.5349   0.4369  0.250  0.710  -9.70 [-17.14, -2.68]         -18.31 [-25.04, -11.20]
+Cross-encoder only                        0.7180   0.6415  0.480  0.910  +8.61 [+3.53, +13.85]         +0.00 [+0.00, +0.00]
+Composite: SC + cosine + coherence (CV)   0.6586   0.5644  0.390  0.820  +2.68 [-1.50, +7.14]          -5.94 [-11.03, -1.02]
+Composite + cross-encoder (CV)            0.7161   0.6325  0.460  0.920  +8.42 [+4.22, +12.84]         -0.19 [-2.73, +2.37]
+
+Tuned weights per fold (SC, cosine, coherence): [[np.float64(0.2), np.float64(0.5), np.float64(0.3)], [np.float64(0.2), np.float64(0.5), np.float64(0.3)], [np.float64(0.2), np.float64(0.5), np.float64(0.3)], [np.float64(0.2), np.float64(0.5), np.float64(0.3)], [np.float64(0.2), np.float64(0.5), np.float64(0.3)]]
+Tuned weights per fold (SC, cosine, coherence, cross-encoder): [[np.float64(0.4), np.float64(0.1), np.float64(0.0), np.float64(0.5)], [np.float64(0.2), np.float64(0.2), np.float64(0.0), np.float64(0.6)], [np.float64(0.1), np.float64(0.2), np.float64(0.0), np.float64(0.7)], [np.float64(0.1), np.float64(0.2), np.float64(0.0), np.float64(0.7)], [np.float64(0.4), np.float64(0.1), np.float64(0.0), np.float64(0.5)]]
+
+Coherence scoring: 8.4 s per query for 100 candidates on this CPU

@@ -1,0 +1,229 @@
+nohup: ignoring input
+================================================================================
+  ASC COMPLETE MEGA BENCHMARK
+  Datasets: Deep96 (100K-5M), SIFT-1M, GloVe-1M, NYTimes-290K
+  Methods:  Brute Force, HNSW, IVF-PQ, Annoy, LSH, SC-Linear,
+            TaCo, Ablation-Imp2, Ablation-Imp1, ASC-Imp1+2
+  + Error Taxonomy on Deep96-1M and SIFT-1M
+  + Improvement 3 nDCG@10 on MSMARCO
+================================================================================
+
+================================================================================
+  DATASET: Deep96-100K  (100,000 vectors, 96-dim)
+================================================================================
+  Loaded: 100,000 x 96, Queries: 200
+  [1/11] Brute Force...
+    Recall=1.0000, Time=0.094ms
+  [2/11] HNSW...
+    Recall=0.9769, Time=0.025ms
+  [3/11] IVF-PQ...
+    Recall=0.4773, Time=0.037ms
+  [4/11] Annoy...
+    Recall=0.5553, Time=0.035ms
+  [5/11] LSH...
+    Recall=0.6418, Time=0.025ms
+  [6/11] SC-Linear...
+    Recall=0.9460, Time=13.8ms
+  [7/11] TaCo Baseline...
+    Recall=0.7937, Time=0.129ms
+  [8/11] Ablation — Imp2 only...
+    Recall=0.7643, Time=0.113ms
+  [9/11] Ablation — Imp1 only...
+    Recall=0.7937, Time=0.109ms
+  [10/11] ASC Imp1+2...
+    Recall=0.7643, Time=0.114ms
+  [11/11] Error Taxonomy: Skipped for this dataset
+  ✓ Done: Deep96-100K
+
+================================================================================
+  DATASET: Deep96-500K  (500,000 vectors, 96-dim)
+================================================================================
+  Loaded: 500,000 x 96, Queries: 200
+  [1/11] Brute Force...
+    Recall=1.0000, Time=0.661ms
+  [2/11] HNSW...
+    Recall=0.9516, Time=0.023ms
+  [3/11] IVF-PQ...
+    Recall=0.3930, Time=0.026ms
+  [4/11] Annoy...
+    Recall=0.4410, Time=0.048ms
+  [5/11] LSH...
+    Recall=0.5796, Time=0.093ms
+  [6/11] SC-Linear...
+    Recall=0.9812, Time=90.2ms
+  [7/11] TaCo Baseline...
+    Recall=0.8860, Time=0.398ms
+  [8/11] Ablation — Imp2 only...
+    Recall=0.8662, Time=0.321ms
+  [9/11] Ablation — Imp1 only...
+    Recall=0.8860, Time=0.375ms
+  [10/11] ASC Imp1+2...
+    Recall=0.8662, Time=0.335ms
+  [11/11] Error Taxonomy: Skipped for this dataset
+  ✓ Done: Deep96-500K
+
+================================================================================
+  DATASET: Deep96-1M  (1,000,000 vectors, 96-dim)
+================================================================================
+  Loaded: 1,000,000 x 96, Queries: 200
+  [1/11] Brute Force...
+    Recall=1.0000, Time=2.003ms
+  [2/11] HNSW...
+    Recall=0.9410, Time=0.027ms
+  [3/11] IVF-PQ...
+    Recall=0.3541, Time=0.052ms
+  [4/11] Annoy...
+    Recall=0.4158, Time=0.053ms
+  [5/11] LSH...
+    Recall=0.5515, Time=0.186ms
+  [6/11] SC-Linear...
+    Recall=0.9853, Time=177.7ms
+  [7/11] TaCo Baseline...
+    Recall=0.9054, Time=0.712ms
+  [8/11] Ablation — Imp2 only...
+    Recall=0.8829, Time=0.597ms
+  [9/11] Ablation — Imp1 only...
+    Recall=0.9054, Time=0.717ms
+  [10/11] ASC Imp1+2...
+    Recall=0.8829, Time=0.571ms
+  [11/11] Error Taxonomy...
+    Running Python ANN for taxonomy inputs...
+    Building coarse index K_c=100...
+
+    ── Error Taxonomy ──────────────────────────
+    Queries analysed: 200
+    Imp1  perfect recall: 148/200 (74.0%)
+    Imp1  TRUE errors:    37 (18.5%) — IMI centroid mismatch
+    Imp1  near-ties:      15 (7.5%) — acceptable approximation
+    Gap ratio mean:       0.909 (missed/worst-returned dist)
+      < 0.5 severe:  0
+      0.5-0.8 clear: 3
+      0.8-0.95 mild: 34
+      >=0.95 tie:    15
+    Imp1+2 perfect:       110/200 (55.0%)
+    Imp1+2 cluster miss:  3 (1.5%)
+    Imp1+2 IMI true err:  71 (35.5%)
+    Imp1+2 IMI near-tie:  16 (8.0%)
+    Imp1+2 both errors:   42 (21.0%)
+    Extra misses (pruning): 431 neighbors
+    Adaptive probe catches: 45/45 (100.0%) boundary cases
+    ────────────────────────────────────────────
+  ✓ Done: Deep96-1M
+
+================================================================================
+  DATASET: Deep96-2M  (2,000,000 vectors, 96-dim)
+================================================================================
+  Loaded: 2,000,000 x 96, Queries: 200
+  [1/11] Brute Force...
+    Recall=1.0000, Time=5.790ms
+  [2/11] HNSW...
+    Recall=0.9275, Time=0.033ms
+  [3/11] IVF-PQ...
+    Recall=0.3273, Time=0.117ms
+  [4/11] Annoy...
+    Recall=0.3823, Time=0.055ms
+  [5/11] LSH...
+    Recall=0.5314, Time=0.407ms
+  [6/11] SC-Linear: Skipped
+  [7/11] TaCo Baseline...
+    Recall=0.9279, Time=1.538ms
+  [8/11] Ablation — Imp2 only...
+    Recall=0.9113, Time=1.227ms
+  [9/11] Ablation — Imp1 only...
+    Recall=0.9279, Time=1.42ms
+  [10/11] ASC Imp1+2...
+    Recall=0.9113, Time=1.251ms
+  [11/11] Error Taxonomy: Skipped for this dataset
+  ✓ Done: Deep96-2M
+
+================================================================================
+  DATASET: Deep96-5M  (5,000,000 vectors, 96-dim)
+================================================================================
+  Loaded: 5,000,000 x 96, Queries: 200
+  [1/11] Brute Force...
+    Recall=0.9880, Time=20.479ms
+  [2/11] HNSW...
+    Recall=0.9063, Time=0.035ms
+  [3/11] IVF-PQ...
+    Recall=0.2926, Time=0.272ms
+  [4/11] Annoy: Skipped (N=5,000,000 too large)
+  [5/11] LSH...
+    Recall=0.4944, Time=1.304ms
+  [6/11] SC-Linear: Skipped
+  [7/11] TaCo Baseline...
+    Recall=0.0000, Time=Nonems
+  [8/11] Ablation — Imp2 only...
+    Recall=0.0000, Time=Nonems
+  [9/11] Ablation — Imp1 only...
+    Recall=0.0000, Time=Nonems
+  [10/11] ASC Imp1+2...
+    Recall=0.0000, Time=Nonems
+  [11/11] Error Taxonomy: Skipped for this dataset
+  ✓ Done: Deep96-5M
+
+================================================================================
+  DATASET: SIFT-1M  (1,000,000 vectors, 128-dim)
+================================================================================
+  Loaded: 1,000,000 x 128, Queries: 200
+  [1/11] Brute Force...
+    Recall=0.9997, Time=4.310ms
+  [2/11] HNSW...
+    Recall=0.9576, Time=0.043ms
+  [3/11] IVF-PQ...
+    Recall=0.4175, Time=0.082ms
+  [4/11] Annoy...
+    Recall=0.3684, Time=0.071ms
+  [5/11] LSH...
+    Recall=0.4351, Time=0.209ms
+  [6/11] SC-Linear: Skipped
+  [7/11] TaCo Baseline...
+    Recall=0.8766, Time=0.854ms
+  [8/11] Ablation — Imp2 only...
+    Recall=0.8681, Time=0.617ms
+  [9/11] Ablation — Imp1 only...
+    Recall=0.8766, Time=0.808ms
+  [10/11] ASC Imp1+2...
+    Recall=0.8681, Time=0.614ms
+  [11/11] Error Taxonomy...
+    Running Python ANN for taxonomy inputs...
+    Building coarse index K_c=100...
+
+    ── Error Taxonomy ──────────────────────────
+    Queries analysed: 200
+    Imp1  perfect recall: 159/200 (79.5%)
+    Imp1  TRUE errors:    21 (10.5%) — IMI centroid mismatch
+    Imp1  near-ties:      20 (10.0%) — acceptable approximation
+    Gap ratio mean:       0.946 (missed/worst-returned dist)
+      < 0.5 severe:  0
+      0.5-0.8 clear: 0
+      0.8-0.95 mild: 21
+      >=0.95 tie:    20
+    Imp1+2 perfect:       99/200 (49.5%)
+    Imp1+2 cluster miss:  1 (0.5%)
+    Imp1+2 IMI true err:  76 (38.0%)
+    Imp1+2 IMI near-tie:  24 (12.0%)
+    Imp1+2 both errors:   17 (8.5%)
+    Extra misses (pruning): 387 neighbors
+    Adaptive probe catches: 18/18 (100.0%) boundary cases
+    ────────────────────────────────────────────
+  ✓ Done: SIFT-1M
+
+================================================================================
+  DATASET: GloVe-1M  (1,183,514 vectors, 100-dim)
+================================================================================
+  Loaded: 1,183,514 x 100, Queries: 200
+  [1/11] Brute Force...
+    Recall=1.0000, Time=2.663ms
+  [2/11] HNSW...
+    Recall=0.6806, Time=0.030ms
+  [3/11] IVF-PQ...
+Traceback (most recent call last):
+  File "/home/tarun/TaCo/mega_benchmark.py", line 356, in <module>
+    ivfpq = faiss.IndexIVFPQ(quantizer, D, nlist, 8, 8)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tarun/.local/lib/python3.12/site-packages/faiss/__init__.py", line 253, in replacement_init
+    original_init(self, *args)
+  File "/home/tarun/.local/lib/python3.12/site-packages/faiss/swigfaiss.py", line 9391, in __init__
+    _swigfaiss.IndexIVFPQ_swiginit(self, _swigfaiss.new_IndexIVFPQ(*args))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in void faiss::ProductQuantizer::set_derived_values() at /project/faiss/impl/ProductQuantizer.cpp:64: Error: '!(d % M == 0)' failed: The dimension of the vector (d) should be a multiple of the number of subquantizers (M)

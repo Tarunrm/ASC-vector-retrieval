@@ -1,0 +1,66 @@
+Loading data...
+Building coarse index K_c=100...
+Done.
+
+Analysing 1000 queries...
+  Query 0/1000...
+  Query 200/1000...
+  Query 400/1000...
+  Query 600/1000...
+  Query 800/1000...
+
+======================================================================
+              ERROR TAXONOMY ANALYSIS — ASC
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+SECTION A: Improvement 1 — IMI Errors (no pruning)
+──────────────────────────────────────────────────────────────────────
+Queries with perfect recall@50:            350 / 1000 (35.0%)
+Queries with errors:                       650 / 1000 (65.0%)
+
+Error sub-classification:
+  TRUE errors (missed closer, returned farther): 502 (50.2%)
+    IMI centroid mismatch placed true neighbor in wrong bucket
+  Near-tie errors (similar distances):           148 (14.8%)
+    Missed and returned at nearly identical distance — acceptable
+
+Gap ratio distribution (missed dist / worst returned dist):
+  Mean: 0.896
+  ratio < 0.5  (severe miss):  0
+  ratio 0.5-0.8 (clear miss):  49
+  ratio 0.8-0.95 (mild miss):  453
+  ratio >= 0.95 (near-tie):    148
+
+──────────────────────────────────────────────────────────────────────
+SECTION B: Improvement 1+2 — Pruning + IMI Errors
+──────────────────────────────────────────────────────────────────────
+Queries with perfect recall@50:            320 / 1000 (32.0%)
+Queries with errors:                       680 / 1000 (68.0%)
+
+Error breakdown:
+  Cluster Miss only:     2 (0.2%) — true neighbor in unpicked cluster
+  IMI True Error only:   536 (53.6%) — centroid mismatch, real failure
+  IMI Near-tie only:     142 (14.2%) — acceptable approximation
+  Both cluster + IMI:    194 (19.4%)
+
+Extra neighbor misses from pruning: 1200 total
+
+Cluster boundary:
+  Avg ratio to boundary cluster: 1.012
+  Adaptive probe would catch:    196/196 (100.0%)
+
+──────────────────────────────────────────────────────────────────────
+SECTION C: Single Query 5 Deep Dive
+──────────────────────────────────────────────────────────────────────
+Query 5: 15 neighbors missed out of 50
+  Closest missed neighbor dist:  0.7005
+  Worst returned false positive: 0.9399
+  Gap ratio:                     0.7453
+  Classification: TRUE ERROR
+  IMI placed true neighbors (dist 0.70-0.88) in wrong centroid
+  buckets, returning farther points (dist 0.90+) instead
+
+======================================================================
+Error taxonomy complete.
+======================================================================

@@ -1,0 +1,24 @@
+
+=== Gist-500000 ===
+SuCo build: wall 0:31.56  peak 9.45 GB
+SuCo alpha=0.04 beta=0.01: recall 0.81634  3.533 ms
+SuCo alpha=0.04 beta=0.05: recall 0.9466  9.773 ms
+SuCo alpha=0.08 beta=0.05: recall 0.9725  10.764 ms
+SuCo alpha=0.12 beta=0.05: recall 0.9804  11.178 ms
+HNSW build (8 threads): 107s  python peak 3837 MB
+HNSW ef=100: recall 0.8036  0.506 ms
+HNSW ef=200: recall 0.8969  0.894 ms
+HNSW ef=400: recall 0.9524  1.502 ms
+HNSW ef=800: recall 0.9786  2.662 ms
+
+=== Gist-1000000 ===
+SuCo build: wall 0:16.88  peak 15.45 GB
+SuCo 0.04 0.01 FAILED
+SuCo 0.04 0.05 FAILED
+SuCo 0.08 0.05 FAILED
+SuCo 0.12 0.05 FAILED
+HNSW build (8 threads): 280s  python peak 7583 MB
+HNSW ef=100: recall 0.7555  0.741 ms
+HNSW ef=200: recall 0.8589  1.098 ms
+HNSW ef=400: recall 0.9281  1.941 ms
+HNSW ef=800: recall 0.9650  3.391 ms

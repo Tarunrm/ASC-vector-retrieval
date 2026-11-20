@@ -1,0 +1,7 @@
+dataset    mode                  SuCo recall / ms    TaCo recall / ms
+deep96_1m  1 thread              0.9745 / 2.287      0.9372 / 3.890
+deep96_1m  8 threads             0.9745 / 1.102      0.9372 / 1.068
+sift_1m    1 thread              0.9750 / 2.069      0.9517 / 4.053
+sift_1m    8 threads             0.9751 / 1.322      0.9517 / 1.402
+gist_250k  1 thread              0.7811 / 2.150      0.6248 / 3.073
+gist_250k  8 threads             0.7811 / 0.912      0.6248 / 1.012

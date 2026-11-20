@@ -1,0 +1,10 @@
+HNSW build wall-clock: 96.5s
+HNSW single-thread ef=50: recall 0.8521, 0.080 ms/query
+HNSW single-thread ef=100: recall 0.9306, 0.136 ms/query
+HNSW single-thread ef=200: recall 0.9725, 0.236 ms/query
+HNSW single-thread ef=400: recall 0.9910, 0.426 ms/query
+TaCo alpha=0.02, beta=0.01: recall 0.9663, 3.811 ms
+TaCo alpha=0.04, beta=0.01: recall 0.95208, 1.586 ms
+TaCo alpha=0.08, beta=0.01: recall 0.97222, 1.52 ms
+TaCo alpha=0.12, beta=0.01: recall 0.98796, 1.954 ms
+Peak RSS this process (HNSW+data): 2041 MB

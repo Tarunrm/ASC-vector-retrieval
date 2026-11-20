@@ -1,0 +1,8 @@
+Deep96-1M, one thread. 'none' is the baseline: the dataset loaded and no index.
+none      build     0.0 s   process peak 0.78 GB
+hnsw      build   276.7 s   process peak 1.02 GB
+ivfpq     build    20.3 s   process peak 0.78 GB
+lsh256    build     1.6 s   process peak 1.45 GB
+lsh1024   build     7.1 s   process peak 4.60 GB
+annoy10   build     9.7 s   process peak 0.97 GB
+annoy50   build    30.9 s   process peak 1.61 GB

@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 1392.98it/s]
+First stage           Rec@100  Hit@5 pre Hit@1  Hit@5  Hit@10  nDCG@10  1st-stage ms
+Exact search          0.9933   0.7820    0.4740 0.8600 0.9520  0.7028   2.582
+HNSW (ef=200)         0.9893   0.7800    0.4720 0.8580 0.9480  0.6998   0.300
+SuCo                  0.9893   0.7820    0.4720 0.8600 0.9520  0.7011   0.361
+TaCo                  0.9623   0.7800    0.4680 0.8440 0.9340  0.6925   -
+ASC (Imp1+2, TaCo)    0.9283   0.7560    0.4560 0.8220 0.9060  0.6697   -
+
+Cross-encoder re-ranking of 100 candidates: 57.4 ms per query (default CPU threads)

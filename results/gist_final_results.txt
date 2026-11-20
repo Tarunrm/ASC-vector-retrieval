@@ -1,0 +1,10 @@
+--- A. Ablation on Gist, alpha=0.2 beta=0.01 ---
+TaCo baseline                      recall 0.84286  2.007 ms
+Imp1 only                          recall 0.73988  2.44 ms
+Imp2 only                          recall 0.79126  1.327 ms
+Imp1+2                             recall 0.69286  1.468 ms
+--- B. beta sweep, alpha=0.2 ---
+beta=0.01                          recall 0.84286  1.992 ms
+beta=0.02                          recall 0.89958  3.182 ms
+beta=0.05                          recall 0.97448  6.188 ms
+beta=0.1                           recall 0.98112  8.016 ms

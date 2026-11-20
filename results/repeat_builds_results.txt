@@ -1,0 +1,17 @@
+build 1/5: SuCo (0.97446, 1.509)  TaCo (0.93724, 2.969)
+build 2/5: SuCo (0.97446, 1.526)  TaCo (0.93724, 2.92)
+build 3/5: SuCo (0.97446, 1.552)  TaCo (0.93724, 3.047)
+build 4/5: SuCo (0.97446, 1.645)  TaCo (0.93724, 2.958)
+build 5/5: SuCo (0.97446, 1.598)  TaCo (0.93724, 2.98)
+HNSW build 1/5 done
+HNSW build 2/5 done
+HNSW build 3/5 done
+HNSW build 4/5 done
+HNSW build 5/5 done
+
+Deep96-1M, 5 independent builds each, one thread, 1000 queries
+system        recall mean  recall sd  recall min-max    ms mean  ms sd
+SuCo          0.9745       0.0000     0.9745-0.9745   1.566    0.055
+TaCo          0.9372       0.0000     0.9372-0.9372   2.975    0.046
+HNSW ef=100   0.9457       0.0004     0.9451-0.9460   0.125    0.005
+HNSW ef=200   0.9798       0.0002     0.9796-0.9800   0.225    0.012

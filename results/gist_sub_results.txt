@@ -1,0 +1,8 @@
+HNSW ef=50: recall 0.7169, 0.228 ms
+HNSW ef=100: recall 0.8436, 0.386 ms
+HNSW ef=200: recall 0.9279, 0.670 ms
+HNSW ef=400: recall 0.9697, 1.171 ms
+HNSW ef=800: recall 0.9877, 2.040 ms
+TaCo alpha=0.04: recall 0.62482, 1.963 ms
+TaCo alpha=0.08: recall 0.72514, 2.349 ms
+TaCo alpha=0.12: recall 0.82836, 2.481 ms
